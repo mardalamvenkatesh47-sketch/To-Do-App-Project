@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Professional To-Do App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Professional To-Do App</h2>
+
+<link rel="stylesheet" href="">
+
+<input type="text" id="taskInput" placeholder="Enter Task">
+
+<select id="priority">
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+
+<input type="date" id="dueDate">
+
+<select id="category">
+<option value="Work">Work</option>
+<option value="Personal">Personal</option>
+<option value="Study">Study</option>
+</select>
+
+<br><br>
+
+<button onclick="addTask()">Add Task</button>
+<button onclick="clearAll()">Clear All</button>
+<button onclick="clearCompleted()">Clear Completed</button>
+<button onclick="loadSampleTask()">Load Sample Task</button>
+
+<br><br>
+
+<input type="text" id="searchInput" placeholder="Search Task...">
+
+<br><br>
+
+<button onclick="filterTasks('all')">All</button>
+<button onclick="filterTasks('completed')">Completed</button>
+<button onclick="filterTasks('pending')">Pending</button>
+
+<br><br>
+
+<button onclick="sortByDate()">Sort by Date</button>
+<button onclick="sortByPriority()">Sort by Priority</button>
+
+<p id="taskStats"></p>
+
+<ul id="taskList"></ul>
+<div id="progressBar">
+<div id="progress"></div>
+</div>
+<div class="container">
+
+<h2>Professional To-Do App</h2>
+
+<!-- your existing inputs and buttons -->
+
+</div>
+
+<h2>Professional To-Do App</h2>
+
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
